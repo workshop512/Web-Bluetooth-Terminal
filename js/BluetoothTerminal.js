@@ -11,8 +11,10 @@ class BluetoothTerminal {
   
   constructor(serviceUuid = 0xFFE0, characteristicUuid = 0xFFE1,
       receiveSeparator = '\n', sendSeparator = '\n') {  
+      
+      changed service UUID to nRF bleuart service, characteristic to bleuart rx
   */
-    constructor(serviceUuid = '6e400001-b5a3-f393-e0a9-e50e24dcca9e', characteristicUuid = '6e400003-b5a3-f393-e0a9-e50e24dcca9e',
+    constructor(serviceUuid = '6e400001-b5a3-f393-e0a9-e50e24dcca9e', characteristicUuid = '6e400002-b5a3-f393-e0a9-e50e24dcca9e',
       receiveSeparator = '\n', sendSeparator = '\n') {
     // Used private variables.
     this._receiveBuffer = ''; // Buffer containing not separated data.
