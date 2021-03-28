@@ -1,3 +1,15 @@
+# Web Bluetooth Terminal - Modified for use with Adafruit BLEuart services.
+
+This fork demonstrates connection and transmission of serial data to nrf bleuart devices, such as those on Adafruit bluefruit sense, etc.
+This was tested by sending some of the adafruit bluefruit connect app "control pad" messages for button presses, but others should work.
+Assumes:  <p>
+ * UART Serivce: 6e400001-b5a3-f393-e0a9-e50e24dcca9e
+ * UART RXD    : 6e400002-b5a3-f393-e0a9-e50e24dcca9e
+ * UART TXD    : 6e400003-b5a3-f393-e0a9-e50e24dcca9e
+
+Issues: this version appends a separation char between sends/receives which will be caught in Adafruit's Bluefruit sketches CRC checks. The sketches must be modified to forgive this to work with this demo.
+<p><p>
+--
 # Web Bluetooth Terminal
 
 [![NpmVersion](https://img.shields.io/npm/v/web-bluetooth-terminal.svg)](https://www.npmjs.com/package/web-bluetooth-terminal)
