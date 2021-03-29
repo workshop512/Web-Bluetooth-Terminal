@@ -5,6 +5,12 @@ const disconnectButton = document.getElementById('disconnect');
 const terminalContainer = document.getElementById('terminal');
 const sendForm = document.getElementById('send-form');
 const inputField = document.getElementById('input');
+//action buttons
+const actionButton1 = document.getElementByUd('button1');
+const actionButton2 = document.getElementByUd('button2');
+const actionButton3 = document.getElementByUd('button3');
+const actionButton4 = document.getElementByUd('button4');
+
 
 // Helpers.
 const defaultDeviceName = 'Terminal';
@@ -59,6 +65,20 @@ connectButton.addEventListener('click', () => {
         deviceNameLabel.textContent = terminal.getDeviceName() ?
             terminal.getDeviceName() : defaultDeviceName;
       });
+});
+
+// Bind event listeners to the UI elements for action buttons.
+actionButton1.addEventListener('click', () => {
+  send('!B11:');
+});
+actionButton2.addEventListener('click', () => {
+  send('!B219');
+});
+actionButton3.addEventListener('click', () => {
+  send('!B318');
+});
+actionButton4.addEventListener('click', () => {
+  send('!B417');
 });
 
 disconnectButton.addEventListener('click', () => {
