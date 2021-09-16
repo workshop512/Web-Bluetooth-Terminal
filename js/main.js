@@ -6,10 +6,10 @@ const terminalContainer = document.getElementById('terminal');
 const sendForm = document.getElementById('send-form');
 const inputField = document.getElementById('input');
 //action buttons
-const actionButton1 = document.getElementByUd('button1');
-const actionButton2 = document.getElementByUd('button2');
-const actionButton3 = document.getElementByUd('button3');
-const actionButton4 = document.getElementByUd('button4');
+const actionButton1 = document.getElementById('button1');
+const actionButton2 = document.getElementById('button2');
+const actionButton3 = document.getElementById('button3');
+const actionButton4 = document.getElementById('button4');
 
 
 // Helpers.
