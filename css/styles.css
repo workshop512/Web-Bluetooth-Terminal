@@ -28,7 +28,7 @@ button {
   border: none;
   color: rgb(161, 197, 252);
   cursor: pointer;
-  margin: 25px 50px 25px;
+  margin: 12px 12px 12px;
   padding: 12px;
   transition: background 0.3s, color 0.3s;
   user-select: none; }
