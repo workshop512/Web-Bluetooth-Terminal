@@ -5,12 +5,21 @@ const disconnectButton = document.getElementById('disconnect');
 const terminalContainer = document.getElementById('terminal');
 const sendForm = document.getElementById('send-form');
 const inputField = document.getElementById('input');
+
 //action buttons
+const actionButtonL = document.getElementById('buttonL');
+const actionButtonX = document.getElementById('buttonX');
+const actionButtonR = document.getElementById('buttonR');
+
 const actionButton1 = document.getElementById('button1');
 const actionButton2 = document.getElementById('button2');
 const actionButton3 = document.getElementById('button3');
 const actionButton4 = document.getElementById('button4');
-
+const actionButton5 = document.getElementById('button5');
+const actionButton6 = document.getElementById('button6');
+const actionButton7 = document.getElementById('button7');
+const actionButton8 = document.getElementById('button8');
+const actionButton9 = document.getElementById('button9');
 
 // Helpers.
 const defaultDeviceName = 'Terminal';
@@ -68,6 +77,16 @@ connectButton.addEventListener('click', () => {
 });
 
 // Bind event listeners to the UI elements for action buttons.
+actionButtonL.addEventListener('click', () => {
+  send('!B03');
+});
+actionButtonX.addEventListener('click', () => {
+  send('!B05');
+});
+actionButtonR.addEventListener('click', () => {
+  send('!B07');
+});
+
 actionButton1.addEventListener('click', () => {
   send('!B11:');
 });
@@ -80,6 +99,24 @@ actionButton3.addEventListener('click', () => {
 actionButton4.addEventListener('click', () => {
   send('!B417');
 });
+actionButton5.addEventListener('click', () => {
+  send('!B55:');
+});
+actionButton6.addEventListener('click', () => {
+  send('!B66');
+});
+actionButton7.addEventListener('click', () => {
+  send('!B77');
+});
+actionButton8.addEventListener('click', () => {
+  send('!B88');
+});
+actionButton9.addEventListener('click', () => {
+  send('!B99:');
+});
+
+
+
 
 disconnectButton.addEventListener('click', () => {
   terminal.disconnect();
