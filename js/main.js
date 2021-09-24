@@ -93,7 +93,7 @@ actionButton1.addEventListener('click', () => {
 actionButton2.addEventListener('click', () => {
   send('!B219');
 });
-actionButton3.addEventListener('click', () => {
+actionButton3.addEventListener('mousedown', () => {
   send('!B318');
 });
 actionButton4.addEventListener('click', () => {
