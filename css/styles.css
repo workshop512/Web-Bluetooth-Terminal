@@ -7,8 +7,8 @@ html, body, .app {
   min-height: 100%; }
 
 body {
-  background: #ffffff;
-  color: rgba(0, 0, 0, 0.87);
+  background: #303030;
+  color: rgb(255, 250, 206);
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -17,18 +17,24 @@ body {
   display: flex;
   flex-direction: column; }
 
+.actionbuttons {
+  border: 1px solid rgba(252, 221, 46, 0.12);
+  border-width: 1px 0;
+  text-align: center;
+}
+
 button {
   background: none;
   border: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgb(161, 197, 252);
   cursor: pointer;
-  margin: 0;
+  margin: 25px 50px 25px;
   padding: 12px;
   transition: background 0.3s, color 0.3s;
   user-select: none; }
   button:active {
-    background: rgba(0, 0, 0, 0.12);
-    color: rgba(0, 0, 0, 0.54); }
+    background: rgb(252, 221, 46);
+    color: rgb(0, 0, 0); }
   button i.material-icons {
     vertical-align: middle; }
 
@@ -46,7 +52,7 @@ button {
       float: left; }
 
 .terminal {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(252, 221, 46, 0.12);
   border-width: 1px 0;
   flex-grow: 1;
   overflow: auto;
@@ -67,11 +73,11 @@ button {
   .send-form input {
     background: none;
     border: none;
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(17, 199, 255, 0.925);
     flex-grow: 1;
     font: normal 16px/1.5 'Roboto Mono', monospace;
     padding: 0 8px; }
     .send-form input::placeholder {
-      color: rgba(0, 0, 0, 0.54); }
+      color: rgba(255, 250, 206, 0.87); }
   .send-form button {
     flex-shrink: 0; }
